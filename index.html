@@ -1,12 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./styles/main.css" />
     <title>Haider Holding</title>
-</head>
-<body>
-    <h1>Haider Holding</h1>
-    
-</body>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <!-- <div class="logo"> -->
+        <img
+          class="logo"
+          src="./images/building-about.jpg"
+          alt="logo"
+          width="100px"
+          height="100px"
+        />
+        <!-- </div> -->
+
+        <div class="nav-container">
+          <a href="#">Home</a>
+          <div class="dropdown">
+            <button class="dropbtn">
+              Dropdown <i class="fa-solid fa-arrow-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#ab-us">About Us</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div>
+          <a href="#">About</a>
+        </div>
+        <div class="login">
+          <a href="#"><i class="fa-solid fa-user"></i></a>
+        </div>
+      </nav>
+      <div class="title-container">
+        <h1>Haider Holding Real Estate</h1>
+        <p>Lorem ipsum dolor sit amet consectetur some text</p>
+        <p>Lorem ipsum dolor sit.</p>
+        <button>Click For More</button>
+      </div>
+    </header>
+    <main>
+      <div class="about-container" id="ab-us">
+        <div class="about-us">
+          <div>
+            <h1>About Us</h1>
+            <hr />
+            <h4>Welcome to our Services</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+              totam minus dolores aliquid doloribus quidem accusamus, debitis
+              dignissimos ex laboriosam magnam? Nam perferendis sapiente optio
+              eaque! Tempora fugiat laboriosam est.
+            </p>
+            <button class="btn-more">Read More...</button>
+          </div>
+        </div>
+        <div class="about-building"></div>
+      </div>
+
+      <!-- our services -->
+      <div class="service-container">
+        <div class="service-title">
+          <h1>
+            Our <br />
+            Services
+          </h1>
+          <hr />
+        </div>
+        <div class="services">
+          <div class="service-items services-one">
+            <h2>Management & Leasing</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
+              nesciunt magni voluptates cumque placeat sit eaque laudantium
+              pariatur optio officiis, provident quod veritatis recusandae
+              tenetur sint perferendis, reiciendis ex. Nesciunt.
+            </p>
+            <button class="btn-more">Read More...</button>
+          </div>
+
+          <div class="service-items services-one">
+            <h2>New Development</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
+              nesciunt magni voluptates cumque placeat sit eaque laudantium
+              pariatur optio officiis, provident quod veritatis recusandae
+              tenetur sint perferendis, reiciendis ex. Nesciunt.
+            </p>
+            <button class="btn-more">Read More...</button>
+          </div>
+
+          <div class="service-items services-one">
+            <h2>Invesment Sales</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
+              nesciunt magni voluptates cumque placeat sit eaque laudantium
+              pariatur optio officiis, provident quod veritatis recusandae
+              tenetur sint perferendis, reiciendis ex. Nesciunt.
+            </p>
+            <button class="btn-more">Read More...</button>
+          </div>
+
+          <div class="service-items services-one">
+            <h2>Sales & Rentals</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
+              nesciunt magni voluptates cumque placeat sit eaque laudantium
+              pariatur optio officiis, provident quod veritatis recusandae
+              tenetur sint perferendis, reiciendis ex. Nesciunt.
+            </p>
+            <button class="btn-more">Read More...</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Featured Listings -->
+      <div class="featured-container">
+        <div class="featured-title">
+          <h1>Featured Listings</h1>
+          <hr />
+        </div>
+        <div class="featured-items">
+          <div class="featured-item">
+            <div class="featured-image"></div>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Architecto quod accusantium, iste, est at modi obcaecati
+              recusandae, tenetur necessitatibus sunt perferendis suscipit vero
+              explicabo? Ipsa qui deleniti autem non magnam?
+            </p>
+            <span>$10,000</span>
+          </div>
+
+          <div class="featured-item">
+            <div class="featured-image"></div>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Architecto quod accusantium, iste, est at modi obcaecati
+              recusandae, tenetur necessitatibus sunt perferendis suscipit vero
+              explicabo? Ipsa qui deleniti autem non magnam?
+            </p>
+            <span>$10,000</span>
+          </div>
+
+          <div class="featured-item">
+            <div class="featured-image"></div>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Architecto quod accusantium, iste, est at modi obcaecati
+              recusandae, tenetur necessitatibus sunt perferendis suscipit vero
+              explicabo? Ipsa qui deleniti autem non magnam?
+            </p>
+            <span>$10,000</span>
+          </div>
+
+          <div class="featured-item">
+            <div class="featured-image"></div>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Architecto quod accusantium, iste, est at modi obcaecati
+              recusandae, tenetur necessitatibus sunt perferendis suscipit vero
+              explicabo? Ipsa qui deleniti autem non magnam?
+            </p>
+            <span>$10,000</span>
+          </div>
+
+          <div class="featured-item">
+            <div class="featured-image"></div>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Architecto quod accusantium, iste, est at modi obcaecati
+              recusandae, tenetur necessitatibus sunt perferendis suscipit vero
+              explicabo? Ipsa qui deleniti autem non magnam?
+            </p>
+            <span>$10,000</span>
+          </div>
+
+          <div class="featured-item">
+            <div class="featured-image"></div>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Architecto quod accusantium, iste, est at modi obcaecati
+              recusandae, tenetur necessitatibus sunt perferendis suscipit vero
+              explicabo? Ipsa qui deleniti autem non magnam?
+            </p>
+            <span>$10,000</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Get Location -->
+      <div class="location">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.239866895237!2d51.52800687415622!3d25.262515229054213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e45c553a7f884d9%3A0x6ff7be6593b8145c!2sHaider%20Holding!5e0!3m2!1sen!2sqa!4v1710543060475!5m2!1sen!2sqa"
+          width="100%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </main>
+    <footer>
+      <div class="social">
+        <a href="#" class="social-item">
+          <i class="fa-brands fa-square-instagram"></i>
+        </a>
+        <a href="#" class="social-item">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="#" class="social-item">
+          <i class="fa-brands fa-square-youtube"></i>
+        </a>
+      </div>
+      <div class="contact">
+        <p class="phone">+974 - 40320333</p>
+        <p>it@haiderholding.com</p>
+        <p>C Ring Road, DOHA QATAR</p>
+        <hr />
+      </div>
+      <p class="copyrights">
+        <i class="fa-regular fa-copyright"></i> Haider Holding 2024. All rights
+        reserved.
+      </p>
+    </footer>
+  </body>
 </html>

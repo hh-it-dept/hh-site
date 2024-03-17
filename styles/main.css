@@ -1,0 +1,278 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  /* background-color: darkgray; */
+  color: #fff;
+  height: 115vh;
+  background: linear-gradient(rgba(38, 0, 255, 0.2), rgba(0, 255, 21, 0.1)),
+    url("../images/building-main.jpg") no-repeat center/cover fixed;
+
+  overflow: hidden;
+}
+.logo {
+  margin-left: 3rem;
+  margin-top: 1rem;
+  border-radius: 10%;
+  overflow: hidden;
+}
+
+.dropbtn {
+  padding: 0.5rem 1rem;
+  background: none;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  /* text-decoration: none; */
+  display: block;
+  font-size: large;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .dropbtn {
+  cursor: pointer;
+  color: #ffb121;
+}
+.dropdown:hover .dropbtn i {
+  rotate: 180deg;
+}
+header nav {
+  /* background-color: aliceblue; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em;
+  font-size: 1.5em;
+}
+
+header nav .nav-container {
+  /* background: #f38e8e; */
+  width: max-content;
+  display: flex;
+  flex-direction: row;
+  column-gap: 1em;
+  align-items: center;
+}
+header nav .nav-container a:hover {
+  color: #ffb121;
+}
+
+header .title-container {
+  /* background: #e3ee7e; */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+header .title-container h1 {
+  font-size: 5em;
+}
+header .title-container p {
+  font-size: 1.5em;
+}
+header .title-container button {
+  padding: 1em 2em;
+  margin-top: 4em;
+  border-color: transparent;
+  cursor: pointer;
+  background: #fff;
+  color: #000;
+  transition: 0.2s linear;
+}
+header .title-container button:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* about us */
+main .about-container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  justify-content: center;
+}
+main .about-us {
+  /* background: gray; */
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2em;
+}
+main .about-building {
+  background: url("../images/building-about.jpg") no-repeat center/cover;
+  width: 50%;
+  margin-top: -5em;
+}
+
+main .about-us h1 {
+  font-size: 5em;
+}
+main .about-us hr {
+  width: 5em;
+  margin-top: 1.5em;
+  margin-bottom: 3.5em;
+}
+main .about-us h4 {
+  font-size: 2em;
+}
+main .about-us p {
+  width: 70%;
+  text-align: justify;
+}
+.btn-more {
+  background: none;
+  color: #489abb;
+  border: none;
+  font-size: large;
+  margin: 0.5em;
+  cursor: pointer;
+}
+
+/* Our Services */
+.service-container {
+  /* background: gray; */
+  margin-top: 10em;
+  display: flex;
+  justify-content: space-between;
+  gap: 4em;
+  padding: 2em;
+}
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* background-color: #489abb; */
+  flex-grow: 3;
+  gap: 2em;
+}
+.service-items {
+  max-width: 20em;
+  /* background: #692e2e; */
+}
+.service-items h2 {
+  font-weight: bolder;
+  padding-bottom: 0.7em;
+}
+
+/* Featured Listings */
+.featured-container {
+  /* background: gray; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.featured-title h1 {
+  font-size: 4em;
+}
+.featured-container hr {
+  width: 3em;
+  margin: 0.5em auto;
+  margin-bottom: 2em;
+}
+.featured-items {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 3rem;
+}
+.featured-item {
+  max-width: 20rem;
+  transition: 0.2s linear;
+  overflow: hidden;
+  box-shadow: 1px 0 8px gray;
+  cursor: pointer;
+}
+.featured-item:hover {
+  box-shadow: 3px 0 8px black;
+}
+.featured-image {
+  width: 20rem;
+  height: 20rem;
+  background: url("../images/building-about.jpg") no-repeat center/cover;
+}
+.featured-item p {
+  text-align: justify;
+  padding: 1rem;
+}
+
+.featured-item span {
+  padding: 1rem;
+  color: #489abb;
+  font-style: italic;
+}
+
+/* footer */
+footer {
+  height: 80vh;
+  background: linear-gradient(rgba(190, 190, 190, 0.3), rgba(0, 0, 0, 0.9));
+  margin-top: 10rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  row-gap: 2rem;
+}
+.social {
+  display: flex;
+  gap: 1rem;
+}
+.social i {
+  font-size: xx-large;
+  color: #ffffff;
+}
+.contact {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+.contact .phone {
+  font-size: 3rem;
+}
+.copyrights {
+  color: rgb(185, 185, 185);
+}
