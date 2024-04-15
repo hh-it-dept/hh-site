@@ -15,9 +15,9 @@ a {
 header {
   /* background-color: darkgray; */
   color: #fff;
-  height: 115vh;
-  background: linear-gradient(rgba(38, 0, 255, 0.2), rgba(0, 255, 21, 0.1)),
-    url("../images/building-main.jpg") no-repeat center/cover fixed;
+  height: 90vh;
+  /* background: linear-gradient(rgba(38, 0, 255, 0.2), rgba(0, 255, 21, 0.1)),
+    url("../images/building-main.jpg") no-repeat center/cover fixed; */
 
   overflow: hidden;
 }
@@ -94,12 +94,12 @@ header nav .nav-container a:hover {
 
 header .title-container {
   /* background: #e3ee7e; */
-  height: 100vh;
+  height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  color: black;
 }
 
 header .title-container h1 {
